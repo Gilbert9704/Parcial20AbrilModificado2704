@@ -23,7 +23,7 @@ public class Stock extends ShareAsset {
     public double getProfit() {
         double profit;
         
-        profit = totalShares * currentPrice - totalCost;
+        profit = (totalShares * currentPrice) - totalCost;
         return profit;
     }
 
@@ -37,7 +37,7 @@ public class Stock extends ShareAsset {
     @Override
     public String toString() {
         return "Stock{" + "Empresa: " + symbol + " Costo Total: " + totalCost + " Precio Actual: " + currentPrice + " Total de acciones " + totalShares + 
-                "Valor en el Mercado " + valorEnElMercado + '}';
+                "Valor en el Mercado: " + valorEnElMercado + '}';
     }
     
     
